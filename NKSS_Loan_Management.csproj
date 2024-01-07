@@ -1,0 +1,361 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B22CEAF2-64E9-4960-AB40-AE88FC14D066}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NKSS_Loan_Management</RootNamespace>
+    <AssemblyName>NKSS_Loan_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddNewMember.aspx" />
+    <Content Include="Admin\amortization.html" />
+    <Content Include="Admin\application.html" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\dashboard.html" />
+    <Content Include="Admin\images\avatar.png" />
+    <Content Include="Admin\membermanagement.aspx" />
+    <Content Include="Admin\payment.html" />
+    <Content Include="Admin\smslog.html" />
+    <Content Include="Admin\usergroup.html" />
+    <Content Include="Admin\usermanagement.html" />
+    <Content Include="dist\css\adminlte.css" />
+    <Content Include="dist\css\adminlte.min.css" />
+    <Content Include="dist\css\alt\adminlte.components.css" />
+    <Content Include="dist\css\alt\adminlte.components.min.css" />
+    <Content Include="dist\css\alt\adminlte.core.css" />
+    <Content Include="dist\css\alt\adminlte.core.min.css" />
+    <Content Include="dist\css\alt\adminlte.extra-components.css" />
+    <Content Include="dist\css\alt\adminlte.extra-components.min.css" />
+    <Content Include="dist\css\alt\adminlte.pages.css" />
+    <Content Include="dist\css\alt\adminlte.pages.min.css" />
+    <Content Include="dist\css\alt\adminlte.plugins.css" />
+    <Content Include="dist\css\alt\adminlte.plugins.min.css" />
+    <Content Include="dist\img\avatar.png" />
+    <Content Include="dist\img\icons.png" />
+    <Content Include="dist\img\logo.jpg" />
+    <Content Include="dist\img\photo2.png" />
+    <Content Include="dist\img\pwd.png" />
+    <Content Include="dist\img\user2-160x160.jpg" />
+    <Content Include="dist\js\adminlte.js" />
+    <Content Include="dist\js\adminlte.min.js" />
+    <Content Include="dist\js\demo.js" />
+    <Content Include="dist\js\pages\dashboard.js" />
+    <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="dist\js\pages\dashboard3.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index.html" />
+    <Content Include="Member\Amortization.html" />
+    <Content Include="Member\Application.html" />
+    <Content Include="Member\Dashboard.html" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="plugins\bs-custom-file-input\bs-custom-file-input.js" />
+    <Content Include="plugins\bs-custom-file-input\bs-custom-file-input.min.js" />
+    <Content Include="plugins\datatables-autofill\css\autoFill.bootstrap4.css" />
+    <Content Include="plugins\datatables-autofill\css\autoFill.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-autofill\js\autoFill.bootstrap4.js" />
+    <Content Include="plugins\datatables-autofill\js\autoFill.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-autofill\js\dataTables.autoFill.js" />
+    <Content Include="plugins\datatables-autofill\js\dataTables.autoFill.min.js" />
+    <Content Include="plugins\datatables-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="plugins\datatables-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="plugins\datatables-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-buttons\css\buttons.bootstrap4.css" />
+    <Content Include="plugins\datatables-buttons\css\buttons.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-buttons\js\buttons.bootstrap4.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.colVis.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.colVis.min.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.flash.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.flash.min.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.html5.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.html5.min.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.print.js" />
+    <Content Include="plugins\datatables-buttons\js\buttons.print.min.js" />
+    <Content Include="plugins\datatables-buttons\js\dataTables.buttons.js" />
+    <Content Include="plugins\datatables-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="plugins\datatables-colreorder\css\colReorder.bootstrap4.css" />
+    <Content Include="plugins\datatables-colreorder\css\colReorder.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-colreorder\js\colReorder.bootstrap4.js" />
+    <Content Include="plugins\datatables-colreorder\js\colReorder.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-colreorder\js\dataTables.colReorder.js" />
+    <Content Include="plugins\datatables-colreorder\js\dataTables.colReorder.min.js" />
+    <Content Include="plugins\datatables-fixedcolumns\css\fixedColumns.bootstrap4.css" />
+    <Content Include="plugins\datatables-fixedcolumns\css\fixedColumns.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-fixedcolumns\js\dataTables.fixedColumns.js" />
+    <Content Include="plugins\datatables-fixedcolumns\js\dataTables.fixedColumns.min.js" />
+    <Content Include="plugins\datatables-fixedcolumns\js\fixedColumns.bootstrap4.js" />
+    <Content Include="plugins\datatables-fixedcolumns\js\fixedColumns.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-fixedheader\css\fixedHeader.bootstrap4.css" />
+    <Content Include="plugins\datatables-fixedheader\css\fixedHeader.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-fixedheader\js\dataTables.fixedHeader.js" />
+    <Content Include="plugins\datatables-fixedheader\js\dataTables.fixedHeader.min.js" />
+    <Content Include="plugins\datatables-fixedheader\js\fixedHeader.bootstrap4.js" />
+    <Content Include="plugins\datatables-fixedheader\js\fixedHeader.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-keytable\css\keyTable.bootstrap4.css" />
+    <Content Include="plugins\datatables-keytable\css\keyTable.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-keytable\js\dataTables.keyTable.js" />
+    <Content Include="plugins\datatables-keytable\js\dataTables.keyTable.min.js" />
+    <Content Include="plugins\datatables-keytable\js\keyTable.bootstrap4.js" />
+    <Content Include="plugins\datatables-keytable\js\keyTable.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-responsive\css\responsive.bootstrap4.css" />
+    <Content Include="plugins\datatables-responsive\css\responsive.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-responsive\js\dataTables.responsive.js" />
+    <Content Include="plugins\datatables-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="plugins\datatables-responsive\js\responsive.bootstrap4.js" />
+    <Content Include="plugins\datatables-responsive\js\responsive.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-rowgroup\css\rowGroup.bootstrap4.css" />
+    <Content Include="plugins\datatables-rowgroup\css\rowGroup.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-rowgroup\js\dataTables.rowGroup.js" />
+    <Content Include="plugins\datatables-rowgroup\js\dataTables.rowGroup.min.js" />
+    <Content Include="plugins\datatables-rowgroup\js\rowGroup.bootstrap4.js" />
+    <Content Include="plugins\datatables-rowgroup\js\rowGroup.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-rowreorder\css\rowReorder.bootstrap4.css" />
+    <Content Include="plugins\datatables-rowreorder\css\rowReorder.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-rowreorder\js\dataTables.rowReorder.js" />
+    <Content Include="plugins\datatables-rowreorder\js\dataTables.rowReorder.min.js" />
+    <Content Include="plugins\datatables-rowreorder\js\rowReorder.bootstrap4.js" />
+    <Content Include="plugins\datatables-rowreorder\js\rowReorder.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-scroller\css\scroller.bootstrap4.css" />
+    <Content Include="plugins\datatables-scroller\css\scroller.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-scroller\js\dataTables.scroller.js" />
+    <Content Include="plugins\datatables-scroller\js\dataTables.scroller.min.js" />
+    <Content Include="plugins\datatables-scroller\js\scroller.bootstrap4.js" />
+    <Content Include="plugins\datatables-scroller\js\scroller.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-select\css\select.bootstrap4.css" />
+    <Content Include="plugins\datatables-select\css\select.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-select\js\dataTables.select.js" />
+    <Content Include="plugins\datatables-select\js\dataTables.select.min.js" />
+    <Content Include="plugins\datatables-select\js\select.bootstrap4.js" />
+    <Content Include="plugins\datatables-select\js\select.bootstrap4.min.js" />
+    <Content Include="plugins\datatables\jquery.dataTables.js" />
+    <Content Include="plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="plugins\fontawesome-free\css\all.css" />
+    <Content Include="plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="plugins\fontawesome-free\css\brands.css" />
+    <Content Include="plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="plugins\fontawesome-free\css\regular.css" />
+    <Content Include="plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="plugins\fontawesome-free\css\solid.css" />
+    <Content Include="plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="plugins\jquery\jquery.js" />
+    <Content Include="plugins\jquery\jquery.min.js" />
+    <Content Include="plugins\jquery\jquery.slim.js" />
+    <Content Include="plugins\jquery\jquery.slim.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddNewMember.aspx.cs">
+      <DependentUpon>AddNewMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddNewMember.aspx.designer.cs">
+      <DependentUpon>AddNewMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\membermanagement.aspx.cs">
+      <DependentUpon>membermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\membermanagement.aspx.designer.cs">
+      <DependentUpon>membermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAL\LoanAmortizationDTO.cs" />
+    <Compile Include="Models\BAL\LoanApplicationDTO.cs" />
+    <Compile Include="Models\BAL\LoanPaymentDTO.cs" />
+    <Compile Include="Models\BAL\LoanTypeDTO.cs" />
+    <Compile Include="Models\BAL\LoginDTO.cs" />
+    <Compile Include="Models\BAL\MemberDTO.cs" />
+    <Compile Include="Models\BAL\PaymentModeTypeDTO.cs" />
+    <Compile Include="Models\BAL\UserDTO.cs" />
+    <Compile Include="Models\BAL\UserGroupDTO.cs" />
+    <Compile Include="Models\Common\Alert.cs" />
+    <Compile Include="Models\Common\ErrorLogger.cs" />
+    <Compile Include="Models\Common\SqlHelper.cs" />
+    <Compile Include="Models\DAL\IDataSource.cs" />
+    <Compile Include="Models\DAL\RepositoryDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\adminlte.css.map" />
+    <Content Include="dist\css\adminlte.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.components.css.map" />
+    <Content Include="dist\css\alt\adminlte.components.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.core.css.map" />
+    <Content Include="dist\css\alt\adminlte.core.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.extra-components.css.map" />
+    <Content Include="dist\css\alt\adminlte.extra-components.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.pages.css.map" />
+    <Content Include="dist\css\alt\adminlte.pages.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.plugins.css.map" />
+    <Content Include="dist\css\alt\adminlte.plugins.min.css.map" />
+    <Content Include="dist\js\.eslintrc.json" />
+    <Content Include="dist\js\adminlte.js.map" />
+    <Content Include="dist\js\adminlte.min.js.map" />
+    <Content Include="Admin\MainMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="plugins\bs-custom-file-input\bs-custom-file-input.js.map" />
+    <Content Include="plugins\bs-custom-file-input\bs-custom-file-input.min.js.map" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="plugins\jquery\jquery.min.map" />
+    <Content Include="plugins\jquery\jquery.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63672</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

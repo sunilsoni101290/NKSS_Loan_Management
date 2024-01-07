@@ -1,0 +1,29 @@
+ErrorLogDate::30-12-2023 07:32:27:5855 PM
+Class Name::Index.aspx.cs
+Method Name::Index
+Error Message::System.NullReferenceException: Object reference not set to an instance of an object.
+   at NKSS_Loan_Management.Index.lnkbtnLogin_Click(Object sender, EventArgs e) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Index.aspx.cs:line 50
+ErrorLogDate::30-12-2023 07:51:47:4519 PM
+Class Name::MainMasterPage.aspx.cs
+Method Name::lnkbtnLogout_Click
+Error Message::System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at NKSS_Loan_Management.Admin.MainMaster.lnkbtnLogout_Click(Object sender, EventArgs e) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Admin\MainMaster.Master.cs:line 54
+
+ErrorLogDate::30-12-2023 11:24:54:0729 PM
+Class Name::MainMasterPage.aspx.cs
+Method Name::lnkbtnLogout_Click
+Error Message::System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at NKSS_Loan_Management.Admin.MainMaster.lnkbtnLogout_Click(Object sender, EventArgs e)
+

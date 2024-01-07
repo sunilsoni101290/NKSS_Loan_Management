@@ -1,0 +1,56 @@
+ErrorLogDate::31-12-2023 01:50:51:3185 AM
+Class Name::RepositoryDAL.cs
+Method Name::AddNewMember
+Error Message::System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'proc_SaveMemberDetails' expects parameter '@DOB', which was not supplied.
+   at NKSS_Loan_Management.Models.Common.SqlHelper.GetTableFromSP(String sp, SqlParameter[] prms) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\Common\SqlHelper.cs:line 77
+   at NKSS_Loan_Management.Models.DAL.RepositoryDAL.AddNewMember(MemberDTO Obj) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\DAL\RepositoryDAL.cs:line 35
+ClientConnectionId:88df9027-1df9-4dc4-8efd-61f53dbd6b7e
+Error Number:201,State:4,Class:16
+
+ErrorLogDate::31-12-2023 01:55:17:8782 AM
+Class Name::RepositoryDAL.cs
+Method Name::AddNewMember
+Error Message::System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to datetime.
+   at NKSS_Loan_Management.Models.Common.SqlHelper.GetTableFromSP(String sp, SqlParameter[] prms) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\Common\SqlHelper.cs:line 77
+   at NKSS_Loan_Management.Models.DAL.RepositoryDAL.AddNewMember(MemberDTO Obj) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\DAL\RepositoryDAL.cs:line 35
+ClientConnectionId:e641d7e4-7dcf-4792-9804-18110a23c28e
+Error Number:8114,State:5,Class:16
+
+ErrorLogDate::31-12-2023 01:59:48:2945 AM
+Class Name::RepositoryDAL.cs
+Method Name::AddNewMember
+Error Message::System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to datetime.
+   at NKSS_Loan_Management.Models.Common.SqlHelper.GetTableFromSP(String sp, SqlParameter[] prms) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\Common\SqlHelper.cs:line 77
+   at NKSS_Loan_Management.Models.DAL.RepositoryDAL.AddNewMember(MemberDTO Obj) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Models\DAL\RepositoryDAL.cs:line 35
+ClientConnectionId:6fb69cde-dc14-4d42-99db-2c797c8eaaed
+Error Number:8114,State:5,Class:16
+
+ErrorLogDate::31-12-2023 04:38:46:0802 PM
+Class Name::membermanagement.aspx.cs
+Method Name::Page_Load
+Error Message::System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'User_Name'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_membermanagement_aspx.__DataBinding__control17(Object sender, EventArgs e) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Admin\membermanagement.aspx:line 52
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at NKSS_Loan_Management.Admin.membermanagement.Page_Load(Object sender, EventArgs e) in D:\My Projects\NKSS Loan Management\Project\NKSS_Loan_Management\Admin\membermanagement.aspx.cs:line 32
+
